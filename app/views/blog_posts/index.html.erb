@@ -7,4 +7,4 @@
         <p><%= blog_post.body %></p>
     <% end %>
 
-<%= link_to "new", new_blog_post_path %>
+<%= link_to "new", new_blog_post_path if user_signed_in? %>

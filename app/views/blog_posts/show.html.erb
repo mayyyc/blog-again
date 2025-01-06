@@ -1,5 +1,5 @@
 <h1><%= @blog_post.title %></h1>
 <p><%= @blog_post.body %></p>
 
-<%= link_to "edit", edit_blog_post_path(@blog_post.id) %>
+<%= link_to "edit", edit_blog_post_path(@blog_post.id) if user_signed_in? %>
 <%= link_to "all posts", root_path %>
